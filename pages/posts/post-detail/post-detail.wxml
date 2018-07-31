@@ -1,0 +1,33 @@
+<!--先静后动，先样式再数据-->
+<view class="container">
+  <text class="title">{{postData.title}}</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image wx:if="{{collected}}" catchtap="onColletionTap" src="/images/icon/collection.png"></image>
+      <image wx:else catchtap="onColletionTap" src="/images/icon/collection-anti.png"></image>
+      <!-- <image catchtap="onShareTap" class="share-img" src="/images/icon/share.png"></image> -->
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <!-- 表格  -->
+  <!-- <text class="detail">{{postData.detail}}</text> -->
+  <view class="table">
+    <block wx:for="{{postData.listData}}" wx:key="{{code}}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+        <view class="td" selectable="true">{{item.code}}</view>
+        <view class="td-c" selectable="true">{{item.text}}</view>
+        <view class="td" selectable="true">{{item.code1}}</view>
+        <view class="td-c" selectable="true">{{item.text1}}</view>
+
+        <!-- 换个颜色  -->
+      </view>
+      <view class="tr bg-g2" wx:else>
+        <view class="td" selectable="true">{{item.code}}</view>
+        <view class="td-c" selectable="true">{{item.text}}</view>
+        <view class="td" selectable="true">{{item.code1}}</view>
+        <view class="td-c" selectable="true">{{item.text1}}</view>
+      </view>
+    </block>
+  </view>
+
+</view>

@@ -1,0 +1,19 @@
+<import src="post-item/post-item-template.wxml" />
+
+<view class="weui-search-bar" style="position:fixed; top:0;width:100%;">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input"  disabled='true' placeholder="{{searchValue ?searchValue : '搜索食物'}}" bindtap="wxSearchTab"/>
+    </view>
+  </view>
+</view>
+
+<view style="margin-top:60px">
+    <block wx:for="{{postList}}" wx:for-item="item" wx:key="{{postId}}" wx:for-index="idx">
+        <!--//template-->
+        <view catchtap="onPostTap" data-postId="{{item.postId}}">
+             <template is="postItem" data="{{...item}}"/>
+        </view>
+</block>
+</view>

@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/posts/post",
+    "pages1/index/index",
+    "pages/posts/post-detail/post-detail",
+    "pages/search/search",
+    "pages1/add/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#20B2AA"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/posts/post",
+        "text": "食物",
+        "iconPath": "images/tab/food-a.png",
+        "selectedIconPath": "images/tab/food.png"
+      },
+      {
+        "pagePath": "pages1/index/index",
+        "text": "记录",
+        "iconPath": "images/tab/list-a.png",
+        "selectedIconPath": "images/tab/list.png"
+      },
+      {
+        "pagePath": "pages1/add/index",
+        "text": "新加",
+        "iconPath": "images/tab/write-a.png",
+        "selectedIconPath": "images/tab/write-b.png"
+      }
+    ]
+  }
+}

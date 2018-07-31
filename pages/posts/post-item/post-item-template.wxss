@@ -1,0 +1,28 @@
+.post-container{
+    flex-direction:column;
+    display:flex;
+    margin-top:20rpx;
+    margin-bottom:40rpx;
+    margin-left: 0rpx;
+    background-color:#fff;
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    padding-bottom: 5px;
+}
+
+.post-title{
+    font-size:34rpx;
+    font-weight: 600;
+    color:#333;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.post-content{
+    color:#666;
+    font-size:28rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    letter-spacing:2rpx;
+    line-height: 28rpx;
+    text-align:right;
+}

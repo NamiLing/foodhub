@@ -1,0 +1,25 @@
+<view class="next-wrap">
+  <view hidden="{{day.post}}" class="none-tip">
+    今天也要好好吃饭哦!
+  </view>
+  <view class="next-item">
+
+<block wx:for="{{days}}" for-item="item">
+    <view wx:if="{{item.post}}" class="next-title">
+      <text wx:if="{{index == 0}}">今天</text>
+      <text class="time">{{item.time}}</text>
+    </view>
+    <block wx:for="{{item.post}}" wx:for-item="post" wx:key="*this">
+      <view class="next-body">
+        <text wx:if="{{post.state === 'normal'}}" class="next-state normal">没有吃多</text>
+        <text wx:if="{{post.state === 'important'}}" class="next-state important">有点多了</text>
+        <text wx:if="{{post.state === 'crash'}}" class="next-state crash">吃太多了</text>
+        <view class="next-text">{{post.content}}</view>
+      </view>
+    </block>
+</block>
+
+    <view class="next-tip">{{day.comment}}</view>
+  </view>
+
+</view>

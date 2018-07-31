@@ -1,0 +1,51 @@
+.text-wrap{
+	padding: 20rpx 30rpx;
+	background-color: #fff;
+	border-top: 1rpx solid #eee;
+	border-bottom: 1rpx solid #eee;
+}
+textarea {
+    width: 700rpx;
+    padding: 30rpx 0;
+}
+.state-wrap{
+	padding-top: 30rpx;
+	padding-bottom: 80rpx;
+	text-align: center;
+}
+.state-item{
+	margin-right: 20rpx;
+  margin-left: 20rpx;
+	font-size: 15px;
+	color: #868686;
+	background-color: #ccc;
+	border-radius: 20rpx;
+	padding: 4rpx 10rpx;
+}
+.state-item.normal{
+	color: #fff;
+	background-color: #7AE8C9;
+}
+.state-item.important{
+	color: #fff;
+	background-color:  #eba027;
+}
+.state-item.crash{
+	color: #fff;
+	background-color: #d8201d;
+}
+.btn-wrap{
+	text-align: center;
+}
+.button{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+	margin: 0 auto;
+	padding: 14rpx 50rpx;
+	background-color: #20B2AA;
+	text-align: center;
+	color: #fff;
+	font-size: 32rpx;
+  letter-spacing: 2rpx;
+}

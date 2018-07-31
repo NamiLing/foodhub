@@ -1,0 +1,33 @@
+<view>
+	<form catchsubmit="formSubmit">
+		<view class="text-wrap">
+			<textarea 
+				name="content"
+				placeholder="今天你吃多了吗？"
+				bindblur="bindTextAreaBlur"
+				auto-focus="true"
+        style="height:700rpx"
+				 />
+		</view>
+
+		<view class="state-wrap">
+			<text 
+				bindtap="selectHandle"
+				id="normal"
+				class="state-item {{isSelected === 'normal' ? 'normal':''}}">没有吃多</text>
+			<text 
+				bindtap="selectHandle"
+				id="important"
+				class="state-item {{isSelected === 'important' ? 'important': ''}}">有点多了</text>
+			<text 
+				bindtap="selectHandle"
+				id="crash"
+				class="state-item {{isSelected === 'crash' ? 'crash' : ''}}">吃太多了</text>
+		</view>
+		
+		<view class="btn-wrap">
+			<button class="button" formType="submit">保存</button>
+		</view>
+	</form>
+	
+</view>
